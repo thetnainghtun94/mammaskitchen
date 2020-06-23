@@ -18,12 +18,21 @@
                 <p>Dashboard</p>
                 </a>
             </li>
+
             <li class="{{ Request::is('admin/slider*') ? 'active': '' }}">
                 <a class="nav-link" href="{{ url('admin/slider') }}">
                 <i class="material-icons">slideshow</i>
                 <p>Sliders</p>
                 </a>
             </li>
+
+            <li class="{{ Request::is('admin/category*') ? 'active': '' }}">
+                <a class="nav-link" href="{{ url('admin/category') }}">
+                <i class="material-icons">content_paste</i>
+                <p>Categories</p>
+                </a>
+            </li>
+            
             <li class="nav-item ">
                 <a class="nav-link" href="./tables.html">
                 <i class="material-icons">content_paste</i>
