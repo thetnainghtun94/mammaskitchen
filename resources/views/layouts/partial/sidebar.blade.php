@@ -32,8 +32,15 @@
                 <p>Categories</p>
                 </a>
             </li>
-            
-            <li class="nav-item ">
+
+            <li class="{{ Request::is('admin/item*') ? 'active': '' }}">
+                <a class="nav-link" href="{{ url('admin/category') }}">
+                <i class="material-icons">library_books</i>
+                <p>Items</p>
+                </a>
+            </li>
+
+            <!-- <li class="nav-item ">
                 <a class="nav-link" href="./tables.html">
                 <i class="material-icons">content_paste</i>
                 <p>Table List</p>
@@ -44,7 +51,7 @@
                 <i class="material-icons">library_books</i>
                 <p>Typography</p>
                 </a>
-            </li>
+            </li> -->
             <li class="nav-item ">
                 <a class="nav-link" href="./icons.html">
                 <i class="material-icons">bubble_chart</i>
