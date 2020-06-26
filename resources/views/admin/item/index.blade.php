@@ -56,7 +56,7 @@
                                                 <button type="button" class="btn btn-danger btn-sm" 
                                                     onclick="if(confirm('Are you sure? You want to delete this?')){
                                                         event.preventDefault();
-                                                        document.getElementById('delete-form-{{ $category->id }}').submit();
+                                                        document.getElementById('delete-form-{{ $item->id }}').submit();
                                                     } else {
                                                         event.preventDefault();
                                                         }"><i class="material-icons">delete</i>

@@ -34,7 +34,7 @@
             </li>
 
             <li class="{{ Request::is('admin/item*') ? 'active': '' }}">
-                <a class="nav-link" href="{{ url('admin/category') }}">
+                <a class="nav-link" href="{{ url('admin/item') }}">
                 <i class="material-icons">library_books</i>
                 <p>Items</p>
                 </a>
