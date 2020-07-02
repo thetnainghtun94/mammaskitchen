@@ -40,6 +40,13 @@
                 </a>
             </li>
 
+            <li class="{{ Request::is('admin/reservation*') ? 'active': '' }}">
+                <a class="nav-link" href="{{ url('admin/reservation') }}">
+                <i class="material-icons">chrome_reader_mode</i>
+                <p>Reservations</p>
+                </a>
+            </li>
+
             <!-- <li class="nav-item ">
                 <a class="nav-link" href="./tables.html">
                 <i class="material-icons">content_paste</i>

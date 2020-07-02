@@ -12,4 +12,5 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth', 'namespace'=>'admin'], fu
     Route::resource('slider', 'SliderController');
     Route::resource('category', 'CategoryController');
     Route::resource('item', 'ItemController');
+    Route::get('reservation', 'ReservationController@index')->name('reservation.index');
 });
