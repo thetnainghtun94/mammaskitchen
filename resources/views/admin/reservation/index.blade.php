@@ -87,7 +87,7 @@
             </div>
         </div>
     </div>
-    {!! Toastr::message() !!}
+    
 @endsection
 
 @push('scripts')
@@ -98,5 +98,5 @@
             $('#table').DataTable();
         });
     </script>
-    
+    {!! Toastr::message() !!}
 @endpush
