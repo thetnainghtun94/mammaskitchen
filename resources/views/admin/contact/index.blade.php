@@ -34,8 +34,8 @@
                                             <td>{{ $contact->subject }}</td>
                                             <td>{{ $contact->created_at }}</td>
                                             <td>
-                                                <a class="btn btn-info btn-sm" href="">
-                                                    <i class="material-icons">mode_edit</i>
+                                                <a class="btn btn-info btn-sm" href="{{ route('contact.show', $contact->id ) }}">
+                                                    <i class="material-icons">details</i>
                                                 </a>
 
                                                 <form id="delete-form-{{ $contact->id }}" 
