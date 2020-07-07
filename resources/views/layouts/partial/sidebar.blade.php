@@ -1,12 +1,8 @@
-<div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-<!--
-    Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+<div class="sidebar" data-color="purple" data-background-color="white" data-image="{{ asset('backend/img/sidebar-1.jpg') }}">
 
-    Tip 2: you can also add an image using data-image tag
--->
     <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-        Creative Tim
+        <a href="{{ route('admin.dashboard') }}" class="simple-text logo-normal">
+        Mamma's Kitchen
         </a>
     </div>
 
@@ -53,20 +49,6 @@
                 <p>Contact Message</p>
                 </a>
             </li>
-
-            
-            <!-- <li class="nav-item ">
-                <a class="nav-link" href="./rtl.html">
-                <i class="material-icons">language</i>
-                <p>RTL Support</p>
-                </a>
-            </li>
-            <li class="nav-item active-pro ">
-                <a class="nav-link" href="./upgrade.html">
-                <i class="material-icons">unarchive</i>
-                <p>Upgrade to PRO</p>
-                </a>
-            </li> -->
         </ul>
     </div><!--sidebar-wapper -->
 </div><!--sidebar-->
